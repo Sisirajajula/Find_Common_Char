@@ -1,0 +1,23 @@
+How to Design a Hashset in Python?
+
+A HashSet is a fundamental data structure in programming, commonly found in languages such as Java. 
+It belongs to the Java Collections Framework and serves as an implementation of the set interface. 
+The distinctive feature of a HashSet is its ability to store elements in a way that facilitates efficient checking 
+for the existence of specific elements and ensures uniqueness within the set.
+Unlike structures such as lists, a HashSet does not maintain any specific order among its elements.
+
+One key characteristic of a HashSet is its guarantee of uniqueness;
+ it does not allow duplicate elements. 
+ Operations like adding, removing, and checking for the presence of elements typically have constant-time average performance, 
+ making it an efficient choice for such tasks. 
+ However, it's essential to note that the order of elements in a HashSet is not guaranteed.
+
+Key Characteristics:
+Uniqueness: A HashSet does not allow duplicate elements. It uses the equals() method to check for duplicates, ensuring that every element in the set is unique.
+
+
+No Order: The elements in a HashSet are not stored in any particular order. If you need to maintain the order of elements, you might consider using a LinkedHashSet, which maintains the order of insertion.
+
+Underlying Data Structure: Internally, a HashSet uses a hash table to store elements. This allows for constant-time average complexity for basic operations like add, remove, and contains.
+
+Null Elements: A HashSet allows one null element. If you attempt to add a duplicate null element, it will replace the existing one.
